@@ -23,6 +23,11 @@
                 'primary': '#FF4240',
                 'secondary':'#131318',
                 'paragraph': 'rgba(19, 19, 24, 0.60)'
+              },
+              backgroundImage: {
+                'jprogram': "url('Images/2.png')",
+                'tprogram': "url('Images/3.png')",
+                'sprogram': "url('Images/4.png')"
               }
             }
           }
@@ -105,16 +110,16 @@
               </div>
         </div>
     </header> 
-    <main class="container mx-auto px-5 lg:px-32 mt-10 lg:mt-24">
+    <main class="container mx-auto px-5 lg:px-32">
         <!-- progress bar -->
-        <section>
+        <section class="mt-10 lg:mt-24">
             <div class="text-center">
                 <hr class="border-t-2 border-dashed border-gray-300 mb-8">
                 <h2 class="text-xl lg:text-4xl font-extrabold text-secondary pb-6">Professional Hockeys Club</h2>
                 <p class="text-sm lg:text-base font-medium text-paragraph text-wrap ">Welcome to the official website of our esteemed Professional Hockey Club, where passion meets precision.</p>
                 <hr class="border-t-2 border-dashed border-gray-300 mt-8">
             </div>
-            <div class="flex-row lg:flex-col mt-11">
+            <div class="flex-row lg:flex mt-11">
                 <!-- progress bar 1 -->
                 <div class="card bg-base-100">
                     <figure class="px-10 pt-10">
@@ -250,7 +255,7 @@
                               ></circle>
                           
                               <!-- Center text -->
-                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">90%</text>
+                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">80%</text>
                             </svg>
                         </div> 
                     </figure>
@@ -262,6 +267,37 @@
             </div>
         </section>
         <!-- program section -->
+        <section class="mt-10 lg:mt-24">
+          <div class="text-center">
+            <hr class="border-t-2 border-dashed border-gray-300 mb-8">
+            <h2 class="text-xl lg:text-4xl font-extrabold text-secondary pb-6">Program Sections</h2>
+            <p class="text-sm lg:text-base font-medium text-paragraph text-wrap ">Dive into our hockey team's diverse program sections, fostering skill development, teamwork, and a passion for the game's excellence.</p>
+            <hr class="border-t-2 border-dashed border-gray-300 mt-8">
+        </div>
+        <div class="grid grid-rows-3 lg:grid-cols-2 lg:flex-1 gap-6 mt-12">
+          <div class="bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url('Images/2.png')] h-[340px] bg-no-repeat bg-cover bg-center rounded-2xl w-full">
+            <div class="px-6 py-24 lg:pt-32">
+              <h2 class="text-3xl font-extrabold text-white pb-4">Junior Program</h2>
+              <p class="text-base font-medium text-white pb-6">Elite skill development for junior hockey players aged 13-18, <br>fostering teamwork, leadership, and sportsmanship.</p>
+              <button class="btn btn-primary bg-primary text-sm lg:text-xl text-white border-0 font-bold">Register Now!</button>
+            </div>
+          </div>
+          <div class="bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url('Images/3.png')] h-[340px] bg-no-repeat bg-cover bg-center rounded-2xl w-full">
+            <div class="px-6 py-24 lg:p-10 lg:pt-32">
+              <h2 class="text-3xl font-extrabold text-white pb-4">Teenager Program</h2>
+              <p class="text-base font-medium text-white pb-6">Specialized coaching from seasoned professionals, <br> guiding teenagers toward their full potential on the ice.</p>
+              <button class="btn btn-primary bg-primary text-sm lg:text-xl text-white border-0 font-bold">Register Now!</button>
+            </div>
+          </div>
+          <div class="bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url('Images/4.png')] h-[340px] bg-no-repeat bg-cover bg-center rounded-2xl lg:col-span-2 w-full">
+            <div class="px-6 py-24 lg:pt-32 lg:pr-[600px]">
+              <h2 class="text-3xl font-extrabold text-white pb-4">Professional Program</h2>
+              <p class="text-base font-medium text-white pb-6">Holistic program integrating physical conditioning, mental resilience, and academic support for promising young athletes.</p>
+              <button class="btn btn-primary bg-primary text-sm lg:text-xl text-white border-0 font-bold">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        </section>
     </main>
     <footer></footer>
 </body>
