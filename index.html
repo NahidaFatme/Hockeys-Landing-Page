@@ -21,7 +21,8 @@
               colors: {
                 clifford: '#da373d',
                 'primary': '#FF4240',
-                'secondary':'#131318'
+                'secondary':'#131318',
+                'paragraph': 'rgba(19, 19, 24, 0.60)'
               }
             }
           }
@@ -32,6 +33,12 @@
         body {
             font-family: 'Manrope', sans-serif;
         }
+        .progress-ring__circle {
+            stroke-dasharray: 400, 400;
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+          }
     </style>
 </head>
 <body>
@@ -63,7 +70,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end flex items-center gap-3">
-                    <i class="fa-solid fa-magnifying-glass sm:hidden" style="color: #292929;"></i>
+                    <i class="fa-solid fa-magnifying-glass invisible lg:visible" style="color: #292929;"></i>
                   <a class="btn btn-primary bg-primary text-sm lg:text-xl text-white border-0 font-bold">Get Ticket</a>
                 </div>
               </div>
@@ -92,13 +99,170 @@
                   </div>
                 </div> 
               </div>
-              <div class="lg:absolute bottom-8 right-8 bg-secondary p-8 text-white lg:max-w-[550px] rounded-2xl">
+              <div class="lg:absolute bottom-8 right-8 bg-secondary p-8 mt-4 lg:mt-0 text-white lg:max-w-[550px] rounded-2xl">
                 <h4 class="text-2xl font-extrabold pb-4">Meet all the heroes from the field</h4>
                 <p class="text-base font-medium">Discover the inspiring stories of all the hockey heroes who have left an indelible mark in the field.</p>
               </div>
         </div>
     </header> 
-    <main></main>
+    <main class="container mx-auto px-5 lg:px-32 mt-10 lg:mt-24">
+        <!-- progress bar -->
+        <section>
+            <div class="text-center">
+                <hr class="border-t-2 border-dashed border-gray-300 mb-8">
+                <h2 class="text-xl lg:text-4xl font-extrabold text-secondary pb-6">Professional Hockeys Club</h2>
+                <p class="text-sm lg:text-base font-medium text-paragraph text-wrap ">Welcome to the official website of our esteemed Professional Hockey Club, where passion meets precision.</p>
+                <hr class="border-t-2 border-dashed border-gray-300 mt-8">
+            </div>
+            <div class="flex-row lg:flex-col mt-11">
+                <!-- progress bar 1 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="relative w-32 h-32">
+                            <svg class="w-full h-full" viewBox="0 0 100 100">
+                              <!-- Background circle -->
+                              <circle
+                                class="text-gray-200 stroke-current"
+                                stroke-width="10"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                              ></circle>
+                              <!-- Progress circle -->
+                              <circle
+                                class="text-[#FF4240] progress-ring__circle stroke-current"
+                                stroke-width="10"
+                                stroke-linecap="round"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * 52) / 100)"
+                              ></circle>
+                          
+                              <!-- Center text -->
+                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">87%</text>
+                            </svg>
+                        </div> 
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold text-secondary">Prayer Facility</h2>
+                      <p class="card-title text-base font-normal text-paragraph text-wrap">Dedicated prayer facility fosters spiritual well-being within our hockey team.</p>
+                    </div>
+                </div>
+                <!-- progress bar 2 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="relative w-32 h-32">
+                            <svg class="w-full h-full" viewBox="0 0 100 100">
+                              <!-- Background circle -->
+                              <circle
+                                class="text-gray-200 stroke-current"
+                                stroke-width="10"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                              ></circle>
+                              <!-- Progress circle -->
+                              <circle
+                                class="text-[#49D293] progress-ring__circle stroke-current"
+                                stroke-width="10"
+                                stroke-linecap="round"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * 57) / 100)"
+                              ></circle>
+                          
+                              <!-- Center text -->
+                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">95%</text>
+                            </svg>
+                        </div> 
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold text-secondary">Experienced Coach</h2>
+                      <p class="card-title text-base font-normal text-paragraph text-wrap">"Master tactician, our hockey team's experienced coach, leads with precision."</p>
+                    </div>
+                </div>
+                <!-- progress bar 3 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="relative w-32 h-32">
+                            <svg class="w-full h-full" viewBox="0 0 100 100">
+                              <!-- Background circle -->
+                              <circle
+                                class="text-gray-200 stroke-current"
+                                stroke-width="10"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                              ></circle>
+                              <!-- Progress circle -->
+                              <circle
+                                class="text-[#FFB546] progress-ring__circle stroke-current"
+                                stroke-width="10"
+                                stroke-linecap="round"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * 53) / 100)"
+                              ></circle>
+                          
+                              <!-- Center text -->
+                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">90%</text>
+                            </svg>
+                        </div> 
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold text-secondary">Senior Player</h2>
+                      <p class="card-title text-base font-normal text-paragraph text-wrap">Seasoned leader, mastering the ice with experience, skill, and resilience.</p>
+                    </div>
+                </div>
+                <!-- progress bar 4 -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="relative w-32 h-32">
+                            <svg class="w-full h-full" viewBox="0 0 100 100">
+                              <!-- Background circle -->
+                              <circle
+                                class="text-gray-200 stroke-current"
+                                stroke-width="10"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                              ></circle>
+                              <!-- Progress circle -->
+                              <circle
+                                class="text-[#4C8DF1] progress-ring__circle stroke-current"
+                                stroke-width="10"
+                                stroke-linecap="round"
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * 50) / 100)"
+                              ></circle>
+                          
+                              <!-- Center text -->
+                              <text x="50" y="50" font-size="24px" text-anchor="middle" alignment-baseline="middle" font-weight="800">90%</text>
+                            </svg>
+                        </div> 
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-xl font-semibold text-secondary">Training Ground</h2>
+                      <p class="card-title text-base font-normal text-paragraph text-wrap">Hockey team's training ground: where dedication and skills shape champions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- program section -->
+    </main>
     <footer></footer>
 </body>
 </html>
